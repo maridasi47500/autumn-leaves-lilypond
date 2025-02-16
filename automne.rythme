@@ -1,0 +1,143 @@
+
+%% Fichier LilyPond généré par Denemo version 2.5.0
+
+%%http://www.gnu.org/software/denemo/
+
+\version "2.22"
+
+CompactChordSymbols = {}
+#(define DenemoTransposeStep 0)
+#(define DenemoTransposeAccidental 0)
+DenemoGlobalTranspose = \void {}
+titledPiece = {}
+AutoBarline = {}
+AutoEndMovementBarline = \bar "|."
+
+% The music follows
+MvmntIVoiceI = {
+  \partial 256*192 Manote8 Manote Manote4 Manote\AutoBarline
+  Manote1\AutoBarline
+  r4 Manote8 Manote~ Manote Manote Manote16 Manote Manote8~ \AutoBarline
+  Manote2 Manote8 Manote Manote4\AutoBarline
+  
+  %5
+  Manote Manote8 Manote~ Manote4 r\AutoBarline
+  r8 Manote Manote Manote Manote4 Manote8 Manote\AutoBarline
+  Manote4 Manote Manote8 Manote Manote Manote\AutoBarline
+  Manote Manote Manote Manote Manote Manote4.\AutoBarline
+  \tuplet 3/2 { r4 Manote8~ } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote }
+  
+  %10
+  \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote~ Manote4 } \tuplet 3/2 { Manote8 Manote Manote~ } Manote4\AutoBarline
+  r8 Manote~ \tuplet 3/2 { Manote Manote Manote } Manote Manote \tuplet 3/2 { Manote Manote Manote~ } Manote4 r8 Manote16 Manote~ Manote8 Manote16 Manote Manote Manote Manote Manote~ \AutoBarline
+  Manote Manote~ Manote Manote~ Manote8 Manote16 Manote~ Manote Manote Manote Manote Manote4\AutoBarline
+  r \tuplet 3/2 { r8 Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote~ }
+  
+  %15
+  \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote~ } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote }
+  \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } r4 Manote8 Manote\AutoBarline
+  Manote Manote \tuplet 3/2 { Manote16~ Manote~ Manote } Manote8 Manote Manote Manote Manote16~ Manote~ \AutoBarline
+  Manote8 Manote Manote Manote Manote Manote \tuplet 3/2 { Manote Manote Manote~ } Manote4. Manote16~ Manote~ Manote8 Manote Manote Manote\AutoBarline
+  
+  %20
+  Manote Manote~ Manote Manote Manote Manote r4\AutoBarline
+  r16 Manote~ Manote Manote~ Manote Manote~ Manote Manote Manote8 \tuplet 3/2 { Manote16 Manote~ Manote~ } Manote Manote Manote8\AutoBarline
+  Manote16 Manote Manote Manote Manote Manote~ Manote Manote~ Manote Manote~ \tuplet 3/2 { Manote~ Manote~ Manote } Manote~ Manote Manote~ Manote\AutoBarline
+  Manote Manote~ Manote Manote Manote Manote Manote Manote~ Manote Manote~ Manote Manote~ Manote Manote Manote Manote\AutoBarline
+  \tuplet 3/2 { Manote8 Manote Manote~ } Manote4 \tuplet 3/2 { Manote8 Manote Manote } \tuplet 3/2 { Manote Manote Manote~ }
+  
+  %25
+  \tuplet 3/2 { Manote~ Manote Manote } Manote2 Manote8 Manote\AutoBarline
+  Manote Manote Manote Manote Manote4 Manote8 Manote\AutoBarline
+  Manote~ Manote Manote Manote~ Manote Manote~ Manote Manote\AutoBarline
+  Manote16 Manote r8 Manote16 Manote r8 Manote16 Manote r8 Manote16 Manote r8\AutoBarline
+  Manote16 Manote r8 Manote16 Manote Manote Manote Manote8 \tuplet 3/2 { Manote16~ Manote~ Manote~ } Manote Manote~ Manote Manote\AutoBarline
+  
+  %30
+  Manote4. Manote8~ Manote Manote Manote Manote\AutoBarline
+  Manote Manote Manote4 Manote Manote8 Manote\AutoBarline
+  Manote4 Manote8 Manote Manote4 Manote8~ Manote\AutoBarline
+  r4 r8 Manote Manote Manote~ Manote Manote~ \AutoBarline
+  Manote4 Manote Manote Manote8 Manote\AutoBarline
+  
+  %35
+  Manote Manote~ Manote Manote~ Manote4 Manote8~ Manote~ \AutoBarline
+  Manote4 Manote8 Manote~ \tuplet 3/2 { Manote4 Manote Manote } r r8 Manote~ Manote Manote~ Manote~ Manote\AutoBarline
+  Manote4 \tuplet 3/2 { Manote Manote8 } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { r Manote r } Manote4~ Manote8 Manote \tuplet 3/2 { Manote16~ Manote Manote } Manote8\AutoBarline
+  
+  %40
+  Manote Manote Manote Manote Manote4 Manote8 Manote\AutoBarline
+  Manote~ \tuplet 3/2 { Manote16~ Manote~ Manote } Manote8 Manote~ Manote Manote Manote Manote~ \AutoBarline
+  \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote }
+  \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote~ }
+  Manote Manote16~ Manote~ Manote8 Manote16~ Manote~ Manote8 Manote16~ Manote~ Manote8 Manote16~ Manote~ \AutoBarline
+  
+  %45
+  Manote8 Manote16~ Manote~ Manote Manote~ Manote~ Manote Manote Manote Manote~ Manote Manote4\AutoBarline
+  r r8 Manote Manote Manote~ Manote Manote\AutoBarline
+  Manote Manote Manote Manote Manote Manote~ Manote Manote~ \AutoBarline
+  Manote4 Manote8 Manote \tuplet 3/2 { Manote16~ Manote~ Manote~ } Manote8 \tuplet 3/2 { Manote16~ Manote~ Manote~ } Manote8\AutoBarline
+  \tuplet 3/2 { Manote4 Manote Manote } \tuplet 3/2 { Manote Manote r }
+  
+  %50
+  r8 Manote~ Manote Manote Manote Manote Manote Manote\AutoBarline
+  \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote~ } Manote4 r8 Manote~ \AutoBarline
+  Manote Manote Manote Manote~ Manote Manote Manote4\AutoBarline
+  Manote16~ Manote~ Manote Manote~ Manote Manote~ Manote Manote Manote~ Manote Manote Manote~ Manote Manote~ Manote Manote~ \AutoBarline
+  Manote Manote Manote Manote r8. Manote32~ Manote~ Manote16 Manote Manote Manote Manote Manote~ Manote Manote~ \AutoBarline
+  
+  %55
+  Manote Manote~ Manote Manote~ Manote Manote~ Manote Manote~ Manote Manote~ Manote Manote~ Manote Manote Manote Manote~ \AutoBarline
+  Manote Manote Manote Manote Manote~ Manote~ Manote Manote~ Manote8 Manote16 Manote~ Manote Manote Manote Manote~ \AutoBarline
+  Manote Manote~ Manote Manote~ Manote Manote~ Manote~ Manote Manote~ Manote~ Manote Manote Manote4\AutoBarline
+  r8 Manote \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote~ } Manote4 Manote8 Manote Manote Manote Manote Manote\AutoBarline 
+%60
+         Manote Manote Manote Manote \tuplet 3/2 { Manote~  Manote~  Manote } Manote Manote\AutoBarline
+         Manote Manote \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 Manote Manote Manote Manote~ \AutoBarline
+         Manote Manote~  Manote~  Manote Manote4 Manote8~  Manote\AutoBarline
+         Manote Manote Manote Manote~  Manote Manote Manote Manote\AutoBarline
+         Manote Manote Manote Manote~  Manote4 Manote8 Manote~ \AutoBarline
+
+%65
+         Manote8. Manote16~  Manote8 Manote~  Manote Manote \tuplet 3/2 { Manote16~  Manote~  Manote } Manote8\AutoBarline
+         Manote4 \tuplet 3/2 { Manote8 Manote Manote } \tuplet 3/2 { r Manote Manote } \tuplet 3/2 { Manote Manote Manote }         \tuplet 3/2 { r Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote~  Manote Manote~  }         Manote4. \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 Manote Manote Manote\AutoBarline
+         \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 Manote~  Manote4. \AutoEndMovementBarline
+
+}
+
+
+
+
+
+%Default Score Layout
+\header{DenemoLayoutName = "Default Score Layout"
+        instrumentation = \markup { \with-url #'"scheme:(d-BookInstrumentation)" "Partition entière"}
+        }
+
+\header {
+tagline = \markup {"/home/ordigoud/autum2.denemo" on \simple #(strftime "%x" (localtime (current-time)))}
+
+        }
+#(set-default-paper-size "a4")
+#(set-global-staff-size 18)
+\paper {
+
+       }
+
+\score { %Start of Movement
+          <<
+
+%Start of Staff
+\new Staff = "Part 1"  << 
+ \new Voice = "MvmntIVoiceI"  { 
+  \clef treble    \key g \major    \time 4/4   \MvmntIVoiceI
+                        } %End of voice
+
+                        >> %End of Staff
+
+          >>
+
+       } %End of Movement
+
+
+
