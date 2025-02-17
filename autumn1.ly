@@ -35,12 +35,12 @@ MvmntIVoiceI = {
 %15
          c' c' dis' fis'\AutoBarline
          d'' b' fis' d'\AutoBarline
-         c' c' a' b'\AutoBarline
-         a' a' c' c'\AutoBarline
-         dis' fis' dis'' b'\AutoBarline
+         c' b a' fis'\AutoBarline
+         g' d'' b' c''\AutoBarline
+         e'' g'' b'' a''\AutoBarline
 %20
-         fis' e' c' b\AutoBarline
-         a' fis' g' d''\AutoBarline
+         g'' e'' c'' b'\AutoBarline
+         d'' c'' b' g'\AutoBarline
          b' c'' e'' g''\AutoBarline
          b'' a'' g'' e''\AutoBarline
          c'' b' d'' c''\AutoBarline
@@ -81,15 +81,15 @@ MvmntIVoiceI = {
          d'' ees'' d'' d''\AutoBarline
          b' a' g' fis'\AutoBarline
 %55
-         a' ees' ees' d'\AutoBarline
+         a' ees' ees' d' c'\AutoBarline
          b e'?4 g' fis'\AutoBarline
          b' a' fis' d''\AutoBarline
          c'' d'' b' a'\AutoBarline
-         g' fis' ees' d'\AutoBarline
+         g' ees' d'\AutoBarline
 %60
          c' b a b\AutoBarline
          e' e' g' g'\AutoBarline
-         b' c'' g'' b''\AutoBarline
+         b' c'' c'' g'' b''\AutoBarline
          g'' e'' c'' a''\AutoBarline
          g'' a'' g'' e''\AutoBarline
 %65
@@ -99,7 +99,7 @@ MvmntIVoiceI = {
          d''?4 c'' d'' b'\AutoBarline
          a' g' fis' e'\AutoBarline
 %70
-         b e' a' b'\AutoBarline
+         b' e' a' b'\AutoBarline
          c'' d'' e'' e'\AutoBarline
          c'' dis' fis' dis''\AutoBarline
          fis'' e'' b' d''\AutoBarline
@@ -111,16 +111,16 @@ MvmntIVoiceI = {
          b' eis' d' d''\AutoBarline
          d'' dis'' b'' a''\AutoBarline
 %80
-         a'' g'' fis'' e''\AutoBarline
+         a'' g'' fis'' g''\AutoBarline
          fis'' dis'' fis'' e''\AutoBarline
          b' g' e'' d''\AutoBarline
          c'' b' c'' b'\AutoBarline
-         a' g' f' e'\AutoBarline
+         a' gis' f' e'\AutoBarline
 %85
          c' b gis a\AutoBarline
          c' e' g' b\AutoBarline
-         c' ees' fis' b'\AutoBarline
-         d'' ees' fis' b'\AutoBarline
+         c' e' g' b'\AutoBarline
+         b c' ees' fis' b' d'' ees' fis' b'\AutoBarline
          d'' ees'' fis'' b''\AutoBarline
 %90
          fis'' a'' a'' fis''\AutoBarline
@@ -181,9 +181,9 @@ MvmntIVoiceI = {
          fis' g'?4 f'?4 e'\AutoBarline
          b' g' e' b'\AutoBarline
          g' e' b' fis'\AutoBarline
-         cis' b' b' fis'\AutoBarline
+         dis' b' b' fis'\AutoBarline
 %140
-         d' b' a' g'\AutoBarline
+         dis' b' a' g'\AutoBarline
          fis' e' g' e'\AutoBarline
          b b a g\AutoBarline
          a b d' f'\AutoBarline
@@ -198,8 +198,8 @@ MvmntIVoiceI = {
          a'' aes'' g'' fis''\AutoBarline
          e'' d'' e'' b'\AutoBarline
          e'' b' a' b'\AutoBarline
-         e'' b' e'' b'\AutoBarline
-         a' e' b' \AutoEndMovementBarline
+         e'' b' a'\AutoBarline
+         e' b' \AutoEndMovementBarline
 }
 
 

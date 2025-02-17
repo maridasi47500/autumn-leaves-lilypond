@@ -33,13 +33,16 @@ def transpose_notes(notes, interval)
 
 
   reverse_note_map = note_map.invert
+  p reverse_note_map
 
   transposed_notes = notes.map do |note|
-    p note
+
     midi_value = note_map[note]
-    transposed_value = (midi_value + interval) % 61
+    transposed_value = (midi_value + interval) #% 60
     transposed_note = reverse_note_map[transposed_value]
+    p note+" "+transposed_note
     transposed_note
+
   end
 
   transposed_notes
@@ -48,7 +51,8 @@ end
 interval = 3
 notes_array = notes.split
 all_transposed_notes = transpose_notes(notes_array, interval)
-all_transposed_notes = notes_array
+#all_transposed_notes = notes_array
+p all_transposed_notes
 
 
 
@@ -56,10 +60,12 @@ all_transposed_notes = notes_array
 
 
 # Replace each instance of MANIOTE with a note from the array
-notes_counter = 0
+notes_counter = 2
 new_content = content.gsub('Manote') do
-  note = all_transposed_notes[notes_counter % notes_array.length]
+  #note = all_transposed_notes[notes_counter % notes_array.length]
+  note = all_transposed_notes[notes_counter]
   notes_counter += 1
+  p note
   note
 end
 
