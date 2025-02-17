@@ -16,7 +16,11 @@ new_content = new_content.gsub(/(?!AutoBarline|tuplet)([abcdefg'])/) do |match|
   notes_counter += 1
   replacement
 end
+while new_content.include?("##") do
+  new_content=new_content.gsub('##','#')
+end
 
+new_content=new_content.gsub('#','Manote')
 # Write the updated content back to the file
 File.open(file_path, 'w') { |file| file.write(new_content) }
 
