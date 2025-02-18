@@ -1,4 +1,3 @@
-
 %% Fichier LilyPond généré par Denemo version 2.5.0
 
 %%http://www.gnu.org/software/denemo/
@@ -93,7 +92,8 @@ MvmntIVoiceI = {
 
 \header {
 tagline = \markup {"/home/ordigoud/autum2.denemo" on \simple #(strftime "%x" (localtime (current-time)))}
-
+title = "autumn leaves violin"
+subtitle = "sol mineur"
         }
 #(set-default-paper-size "a4")
 #(set-global-staff-size 18)
@@ -105,9 +105,9 @@ tagline = \markup {"/home/ordigoud/autum2.denemo" on \simple #(strftime "%x" (lo
           <<
 
 %Start of Staff
-\new Staff = "Part 1"  << 
+\new Staff = "violon"  << 
  \new Voice = "MvmntIVoiceI"  { 
-  \clef treble    \key g \major    \time 4/4   \MvmntIVoiceI
+  \clef treble    \key g \minor    \time 4/4   \MvmntIVoiceI
                         } %End of voice
 
                         >> %End of Staff
@@ -115,6 +115,4 @@ tagline = \markup {"/home/ordigoud/autum2.denemo" on \simple #(strftime "%x" (lo
           >>
 
        } %End of Movement
-
-
 

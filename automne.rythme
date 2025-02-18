@@ -6,8 +6,8 @@
 \version "2.22"
 
 CompactChordSymbols = {}
-Manote(define DenemoTransposeStep 0)
-Manote(define DenemoTransposeAccidental 0)
+#(define DenemoTransposeStep 0)
+#(define DenemoTransposeAccidental 0)
 DenemoGlobalTranspose = \void {}
 titledPiece = {}
 AutoBarline = {}
@@ -88,15 +88,15 @@ MvmntIVoiceI = {
 %Default Score Layout
 
 \header{DenemoLayoutName = "Default Score Layout"
-        instrumentation = \markup { \with-url Manote"scheme:(d-BookInstrumentation)" "Partition entière"}
+        instrumentation = \markup { \with-url #'"scheme:(d-BookInstrumentation)" "Partition entière"}
         }
 
 \header {
-tagline = \markup {"/home/ordigoud/autum2.denemo" on \simple Manote(strftime "%x" (localtime (current-time)))}
+tagline = \markup {"/home/ordigoud/autum2.denemo" on \simple #(strftime "%x" (localtime (current-time)))}
 
         }
-Manote(set-default-paper-size "a4")
-Manote(set-global-staff-size 18)
+#(set-default-paper-size "a4")
+#(set-global-staff-size 18)
 \paper {
 
        }

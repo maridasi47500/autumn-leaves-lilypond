@@ -60,7 +60,7 @@ p all_transposed_notes
 
 
 # Replace each instance of MANIOTE with a note from the array
-notes_counter = 2
+notes_counter = 0
 new_content = content.gsub('Manote') do
   #note = all_transposed_notes[notes_counter % notes_array.length]
   note = all_transposed_notes[notes_counter]
