@@ -48,10 +48,14 @@ def transpose_notes(notes, interval)
   transposed_notes
 end
 
-interval = 3
+interval = ARGV[0].to_i
 notes_array = notes.split
-all_transposed_notes = transpose_notes(notes_array, interval)
-#all_transposed_notes = notes_array
+if interval != 0
+  all_transposed_notes = transpose_notes(notes_array, interval)
+else
+  all_transposed_notes = notes_array
+end
+
 p all_transposed_notes
 
 

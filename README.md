@@ -9,7 +9,9 @@
 *  ruby wowmusic rb est pour remplacer rythmne automne avec les notes de autumn leaves 
 # bienvenue 
 *c'est pour associer des rythmne et notes 
-* ou : sh.yeah.sh
+* scripts : wonderful_1 et wonderful_2
+* run : sh yeah.sh wonderful 0
+
 
 
 

@@ -1,5 +1,5 @@
 # Read the input file
-input = File.read("autumn1.ly")
+input = File.read(ARGV[0]+"_1.ly")
 
 # Extract the relevant section
 section = input[/MvmntIVoiceI\s*=\s*{([^}]*)}/m, 1]
