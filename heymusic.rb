@@ -1,6 +1,6 @@
 # Open the file in read mode
 la_partition = 'c.ki'
-file_path = 'rythme.automne'
+file_path = 'c.lerythme'
 content = File.read(file_path)
 
 # Define the list of musical notes

@@ -83,7 +83,7 @@ MvmntIVoiceI = {
          d'8. c'16~  bes8 c'~  d' f' \tuplet 3/2 { aes'16~  bes'~  aes' } f'8\AutoBarline
          g'4 \tuplet 3/2 { ees'8 g' bes' } \tuplet 3/2 { r d' ees' } \tuplet 3/2 { g' bes' d'' }         \tuplet 3/2 { r c' f' } \tuplet 3/2 { ges' c'' c'' } \tuplet 3/2 { des'' ges'' g'' } \tuplet 3/2 { des'''~  a'' c'''~  }         c'''4. \tuplet 3/2 { c'''16~  ces''~  bes''~  } a''8 g'' f'' g''\AutoBarline
          \tuplet 3/2 { d''16~  g''~  d''~  } c''8 \tuplet 3/2 { d''16~  g''~  d''~  } c''8 g'~  d''4. \AutoEndMovementBarline
-}
+}%fin ici
 %Default Score Layout
 
 \header{DenemoLayoutName = "Default Score Layout"
