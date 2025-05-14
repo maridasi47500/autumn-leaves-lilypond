@@ -1,19 +1,21 @@
 # Open the file in read mode
 la_partition = 'c.ki'
 file_path = 'c.lerythme'
+filewow = 'mesnotes.music'
 content = File.read(file_path)
 
 # Define the list of musical notes
 
 
 
-notes = %(e' e' fis' g' c'' d' e' e' d' cis' d' b' b' d'' b' g' fis' e' g' g' b' a' g' c'' a' g' fis' e' dis' b' a' fis' g' a' fis' g' e' b a gis b d' gis' b' fis'' e'' b' d'' c'' a' e' b' a' b' a' a' c' c' dis' fis' d'' b' fis' d' c' c' a' b' a' a' c' c' dis' fis' dis'' b' fis' e' c' b a' fis' g' d'' b' c'' e'' g'' b'' a'' g'' e'' c'' b' d'' c'' b' g' e' c' b gis' a' c'' e'' g'' b'' g'' a'' a'' g'' a'' fis'' e'' dis'' c'' b' a' g' fis' fis' b e' g' fis' e' b e' fis' g' fis' g' fis' e' b' d'' c'' d'' c'' b' c' b c'' b' c''' b'' a'' b'' b'' a'' g'' fis'' g'' a'' ais'' b'' b' fis'' e'' b' b' f'' e'' ees'' d'' c'' b' a' aes' fis' g' fis' e' c' b d' b c' e' g' b' gis' a' c'' e'' c'' a' e' g' e' g' e' fis' a' c'' d'' fis'' e'' ees'' cis'' d'' d' e' fis' g' a' b' c'' d'' ees'' d'' d'' b' a' g' fis' a' ees' ees' d' b e' g' fis' b' a' fis' d'' c'' d'' b' a' g' fis' ees' d' c' b a b e' e' g' g' b' c'' g'' b'' g'' e'' c'' a'' g'' a'' g'')
-filewow = 'mesnotes.music'
+
 def remove_newlines(string)
   string.gsub(/\n/, ' ')
 end
 
-notes = remove_newlines(File.read(filewow).strip)
+notes = remove_newlines(File.read(filewow).strip).split(" ")
+p notes
+p notes.length
 
 def transpose_notes(notes, interval)
   note_map = {
@@ -35,16 +37,16 @@ def transpose_notes(notes, interval)
 
 
   reverse_note_map = note_map.invert
-  p reverse_note_map
+  #p reverse_note_map
 
   transposed_notes = notes.map do |note|
-    p note
+    #p note
 
     midi_value = note_map[note]
-    transposed_value = (midi_value + interval) #% 60
+    transposed_value = (midi_value + interval) % 60
     transposed_note = reverse_note_map[transposed_value]
 
-    p note+" "+transposed_note
+    p note+" "+transposed_note+(note == transposed_note ? " ! salut " : "")
     
     transposed_note
 
@@ -54,7 +56,7 @@ def transpose_notes(notes, interval)
 end
 
 interval = ARGV[0].to_i
-notes_array = notes.split
+notes_array = notes
 if interval != 0
   all_transposed_notes = transpose_notes(notes_array, interval)
 else
@@ -62,6 +64,7 @@ else
 end
 
 p "all transpoded notes"
+p all_transposed_notes.length
 p all_transposed_notes
 
 
@@ -75,7 +78,7 @@ new_content = content.gsub('Manote') do
   #note = all_transposed_notes[notes_counter % notes_array.length]
   note = all_transposed_notes[notes_counter]
   notes_counter += 1
-  p note
+  #p note
   note
 end
 

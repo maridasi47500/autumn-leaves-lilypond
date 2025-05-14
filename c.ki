@@ -16,74 +16,74 @@ AutoEndMovementBarline = \bar "|."
 
 MvmntIVoiceI = {
 
-\partial 256*192  a'8 a' ces''4 c''\AutoBarline
+\partial 256*192  a'8 a' b'4 c''\AutoBarline
          f''1\AutoBarline
-         r4 g'8 a'~  a' g' ges'16 g' fes''8~ \AutoBarline
-         fes''2 g''8 fes'' c''4\AutoBarline
+         r4 g'8 a'~  a' g' ges'16 g' e''8~ \AutoBarline
+         e''2 g''8 e'' c''4\AutoBarline
 %5
-         ces' a'8 c''~  c''4 r\AutoBarline
-         r8 fes'' d'' c'' f''4 d''8 c''\AutoBarline
-         ces'4 a' aes'8 fes'' d'' ces'\AutoBarline
-         c'' d'' ces' c'' a' fes'4.\AutoBarline
-         \tuplet 3/2 { r4 d'8~  } \tuplet 3/2 { des' fes' g' } \tuplet 3/2 { des'' fes'' g'' } \tuplet 3/2 { ces'' a'' fes'' }%10
-         \tuplet 3/2 { g'' f'' d'' } \tuplet 3/2 { a'~  fes''4 } \tuplet 3/2 { d''8 fes'' d''~  } d''4\AutoBarline
-         r8 f'~  \tuplet 3/2 { f' aes' ces' } g'' fes'' \tuplet 3/2 { ces' g' f'~  }         fes'4 r8 d''16 ces'~  c''8 g''16 fes'' f'' a'' c''' fes'''~ \AutoBarline
-         d''' c'''~  a'' f''~  fes''8 g''16 f''~  fes'' c'' a' f' fes'4\AutoBarline
-         r \tuplet 3/2 { r8 des'' d'' } \tuplet 3/2 { f'' a'' c''' } \tuplet 3/2 { fes''' c''' d'''~  }%15
-         \tuplet 3/2 { d''' c''' d''' } \tuplet 3/2 { ces'' a'' aes''~  } \tuplet 3/2 { aes'' f'' fes'' } \tuplet 3/2 { d'' c'' ces' }         \tuplet 3/2 { ces' fes' a' } \tuplet 3/2 { c'' ces' a' } r4 fes'8 a'\AutoBarline
-         ces' c'' \tuplet 3/2 { ces'16~  c''~  ces' } a'8 fes'' g'' f'' g''16~  f''~ \AutoBarline
-         fes''8 f' fes' f'' fes'' f''' \tuplet 3/2 { fes''' d''' fes'''~  }         fes'''4. d'''16~  c'''~  ces''8 c''' d''' ees'''\AutoBarline
+         b' a'8 c''~  c''4 r\AutoBarline
+         r8 e'' d'' c'' f''4 d''8 c''\AutoBarline
+         b'4 a' aes'8 e'' d'' b'\AutoBarline
+         c'' d'' b' c'' a' e'4.\AutoBarline
+         \tuplet 3/2 { r4 d'8~  } \tuplet 3/2 { des' e' g' } \tuplet 3/2 { des'' e'' g'' } \tuplet 3/2 { b'' a'' e'' }%10
+         \tuplet 3/2 { g'' f'' d'' } \tuplet 3/2 { a'~  e''4 } \tuplet 3/2 { d''8 e'' d''~  } d''4\AutoBarline
+         r8 f'~  \tuplet 3/2 { f' aes' b' } g'' e'' \tuplet 3/2 { b' g' f'~  }         e'4 r8 d''16 b'~  c''8 g''16 e'' f'' a'' c''' e'''~ \AutoBarline
+         d''' c'''~  a'' f''~  e''8 g''16 f''~  e'' c'' a' f' e'4\AutoBarline
+         r \tuplet 3/2 { r8 des'' d'' } \tuplet 3/2 { f'' a'' c''' } \tuplet 3/2 { e''' c''' d'''~  }%15
+         \tuplet 3/2 { d''' c''' d''' } \tuplet 3/2 { b'' a'' aes''~  } \tuplet 3/2 { aes'' f'' e'' } \tuplet 3/2 { d'' c'' b' }         \tuplet 3/2 { b' e' a' } \tuplet 3/2 { c'' b' a' } r4 e'8 a'\AutoBarline
+         b' c'' \tuplet 3/2 { b'16~  c''~  b' } a'8 e'' g'' f'' g''16~  f''~ \AutoBarline
+         e''8 f' e' f'' e'' f''' \tuplet 3/2 { e''' d''' e'''~  }         e'''4. d'''16~  c'''~  b''8 c''' d''' ees'''\AutoBarline
 %20
-         fes''' fes''~  ces'' a'' fes'' fes'' r4\AutoBarline
-         r16 bes''~  a'' aes''~  g'' f''~  fes'' d'' des''8 \tuplet 3/2 { ces'16 c''~  ces'~  } a' f' fes'8\AutoBarline
-         g'16 fes' f' a' c'' fes''~  des'' d''~  f'' a''~  \tuplet 3/2 { f''~  d''~  a' } c''~  a' c''~  a'\AutoBarline
-         ces' d''~  f'' g'' ces'' a'' aes'' ges''~  g'' g'~  a' ces'~  c'' d'' fes'' f''\AutoBarline
-         \tuplet 3/2 { g''8 aes'' g''~  } g''4 \tuplet 3/2 { fes''8 d'' c'' } \tuplet 3/2 { ces' d'' aes'~  }%25
-         \tuplet 3/2 { aes'~  g' f' } fes'2 a'8 c''\AutoBarline
-         ces' fes'' d'' ces' g''4 f''8 g''\AutoBarline
-         fes''~  d'' c'' aes'~  g' f'~  fes' d'\AutoBarline
-         fes'16 a' r8 a'16 c'' r8 c''16 fes'' r8 fes''16 f'' r8\AutoBarline
-         f''16 c''' r8 fes'''16 c''' a'' f'' d'''8 \tuplet 3/2 { c'''16~  d'''~  c'''~  } a'' f''~  fes'' d''\AutoBarline
+         e''' e''~  b'' a'' e'' e'' r4\AutoBarline
+         r16 bes''~  a'' aes''~  g'' f''~  e'' d'' des''8 \tuplet 3/2 { b'16 c''~  b'~  } a' f' e'8\AutoBarline
+         g'16 e' f' a' c'' e''~  des'' d''~  f'' a''~  \tuplet 3/2 { f''~  d''~  a' } c''~  a' c''~  a'\AutoBarline
+         b' d''~  f'' g'' b'' a'' aes'' ges''~  g'' g'~  a' b'~  c'' d'' e'' f''\AutoBarline
+         \tuplet 3/2 { g''8 aes'' g''~  } g''4 \tuplet 3/2 { e''8 d'' c'' } \tuplet 3/2 { b' d'' aes'~  }%25
+         \tuplet 3/2 { aes'~  g' f' } e'2 a'8 c''\AutoBarline
+         b' e'' d'' b' g''4 f''8 g''\AutoBarline
+         e''~  d'' c'' aes'~  g' f'~  e' d'\AutoBarline
+         e'16 a' r8 a'16 c'' r8 c''16 e'' r8 e''16 f'' r8\AutoBarline
+         f''16 c''' r8 e'''16 c''' a'' f'' d'''8 \tuplet 3/2 { c'''16~  d'''~  c'''~  } a'' f''~  e'' d''\AutoBarline
 %30
-         g''4. f''8~  fes'' f'' a'' c'''\AutoBarline
-         bes'' ces'' aes''4 g'' f''8 g''\AutoBarline
-         fes''4 d''8 c'' ces'4 a'8~  fes''\AutoBarline
-         r4 r8 a' d'' fes''~  f'' g''~ \AutoBarline
-         a''4 a' f'' aes'8 ces'\AutoBarline
+         g''4. f''8~  e'' f'' a'' c'''\AutoBarline
+         bes'' b'' aes''4 g'' f''8 g''\AutoBarline
+         e''4 d''8 c'' b'4 a'8~  e''\AutoBarline
+         r4 r8 a' d'' e''~  f'' g''~ \AutoBarline
+         a''4 a' f'' aes'8 b'\AutoBarline
 %35
-         aes'' ces''~  a'' fes''~  g''4 fes''8~  ces'~ \AutoBarline
-         ces'4 g'8 fes'~  \tuplet 3/2 { g'4 g' g' }         r r8 fes'~  g' a'~  d''~  a'\AutoBarline
-         c''4 \tuplet 3/2 { fes' fes''8 } \tuplet 3/2 { fes'' aes' aes' } \tuplet 3/2 { aes'' g'' aes'' }         \tuplet 3/2 { r fes''' r } d'''4~  d'''8 c''' \tuplet 3/2 { ces''16~  c''' ces'' } aes''8\AutoBarline
+         aes'' b''~  a'' e''~  g''4 e''8~  b'~ \AutoBarline
+         b'4 g'8 e'~  \tuplet 3/2 { g'4 g' g' }         r r8 e'~  g' a'~  d''~  a'\AutoBarline
+         c''4 \tuplet 3/2 { e' e''8 } \tuplet 3/2 { e'' aes' aes' } \tuplet 3/2 { aes'' g'' aes'' }         \tuplet 3/2 { r e''' r } d'''4~  d'''8 c''' \tuplet 3/2 { b''16~  c''' b'' } aes''8\AutoBarline
 %40
-         ces'' a'' fes'' c'' a''4 g''8 f''\AutoBarline
-         fes''~  \tuplet 3/2 { f''16~  fes''~  d'' } des''8 bes'~  a' f' fes' des'~ \AutoBarline
-         \tuplet 3/2 { d' f' a' } \tuplet 3/2 { c'' fes' f' } \tuplet 3/2 { a' c'' fes'' } \tuplet 3/2 { fes' f' aes' }         \tuplet 3/2 { ces' fes'' g'' } \tuplet 3/2 { aes' ces' fes'' } \tuplet 3/2 { g'' aes'' ces'' } \tuplet 3/2 { fes''' ces'' d'''~  }         d''' ces''16~  d'''~  c'''8 ges''16~  a''~  g''8 ees''16~  f''~  fes''8 ces'16~  d''~ \AutoBarline
+         b'' a'' e'' c'' a''4 g''8 f''\AutoBarline
+         e''~  \tuplet 3/2 { f''16~  e''~  d'' } des''8 bes'~  a' f' e' des'~ \AutoBarline
+         \tuplet 3/2 { d' f' a' } \tuplet 3/2 { c'' e' f' } \tuplet 3/2 { a' c'' e'' } \tuplet 3/2 { e' f' aes' }         \tuplet 3/2 { b' e'' g'' } \tuplet 3/2 { aes' b' e'' } \tuplet 3/2 { g'' aes'' b'' } \tuplet 3/2 { e''' b'' d'''~  }         d''' b''16~  d'''~  c'''8 ges''16~  a''~  g''8 ees''16~  f''~  e''8 b'16~  d''~ \AutoBarline
 %45
-         c''8 fes''16~  g''~  f'' g'~  ces'~  d'' c'' a' fes'~  c' g'4\AutoBarline
-         r r8 f' fes' aes'~  ces' d''\AutoBarline
-         aes'' f'' fes'' d'' c'' aes'~  g' f'~ \AutoBarline
-         fes'4 ges'8 a' \tuplet 3/2 { ces'16~  c''~  ces'~  } a'8 \tuplet 3/2 { ces'16~  c''~  ces'~  } a'8\AutoBarline
-         \tuplet 3/2 { ges''4 c'' a' } \tuplet 3/2 { ges' fes' r }%50
-         r8 ges'~  fes' aes' ces' d'' g'' f''\AutoBarline
-         \tuplet 3/2 { fes'' f'' fes''' } \tuplet 3/2 { fes'' f'' d'''~  } d'''4 r8 c'''~ \AutoBarline
-         ces'' a'' aes'' fes''~  ces'' a'' fes''4\AutoBarline
-         a''16~  ces''~  a'' aes''~  g'' f''~  fes'' d'' des''~  g' ces' a'~  g' f'~  fes' g'~ \AutoBarline
-         fes' f' a' c'' r8. g'32~  f'~  fes'16 f' a' c'' fes'' des''~  d'' fes''~ \AutoBarline
+         c''8 e''16~  g''~  f'' g'~  b'~  d'' c'' a' e'~  c' g'4\AutoBarline
+         r r8 f' e' aes'~  b' d''\AutoBarline
+         aes'' f'' e'' d'' c'' aes'~  g' f'~ \AutoBarline
+         e'4 ges'8 a' \tuplet 3/2 { b'16~  c''~  b'~  } a'8 \tuplet 3/2 { b'16~  c''~  b'~  } a'8\AutoBarline
+         \tuplet 3/2 { ges''4 c'' a' } \tuplet 3/2 { ges' e' r }%50
+         r8 ges'~  e' aes' b' d'' g'' f''\AutoBarline
+         \tuplet 3/2 { e'' f'' e''' } \tuplet 3/2 { e'' f'' d'''~  } d'''4 r8 c'''~ \AutoBarline
+         b'' a'' aes'' e''~  b'' a'' e''4\AutoBarline
+         a''16~  b''~  a'' aes''~  g'' f''~  e'' d'' des''~  g' b' a'~  g' f'~  e' g'~ \AutoBarline
+         e' f' a' c'' r8. g'32~  f'~  e'16 f' a' c'' e'' des''~  d'' e''~ \AutoBarline
 %55
-         f'' g''~  f'' ees''~  d'' ces'~  ces' aes'~  g' f'~  fes' d'~  c' fes' g' d''~ \AutoBarline
-         ces' c'' fes'' g'' ces''~  c'''~  d''' fes'''~  fes'''8 d'''16 c'''~  ces'' a'' g'' f''~ \AutoBarline
-         fes'' a''~  fes'' fes''~  d'' d''~  a'~  g' d''~  a'~  g' fes' d'4\AutoBarline
-         r8 fes'' \tuplet 3/2 { f'' aes'' a'' } \tuplet 3/2 { ces'' c''' d''' } \tuplet 3/2 { fes''' f''' fes'''~  }         fes'''4 d'''8 c''' ces'' a'' aes'' f''\AutoBarline
+         f'' g''~  f'' ees''~  d'' b'~  b' aes'~  g' f'~  e' d'~  c' e' g' d''~ \AutoBarline
+         b' c'' e'' g'' b''~  c'''~  d''' e'''~  e'''8 d'''16 c'''~  b'' a'' g'' f''~ \AutoBarline
+         e'' a''~  e'' e''~  d'' d''~  a'~  g' d''~  a'~  g' e' d'4\AutoBarline
+         r8 e'' \tuplet 3/2 { f'' aes'' a'' } \tuplet 3/2 { b'' c''' d''' } \tuplet 3/2 { e''' f''' e'''~  }         e'''4 d'''8 c''' b'' a'' aes'' f''\AutoBarline
 %60
-         fes'' c''' a'' fes'' \tuplet 3/2 { a''~  ces''~  a'' } aes'' ges''\AutoBarline
-         g'' ges'' \tuplet 3/2 { fes''16~  f''~  fes''~  } d''8 des'' ces' c'' bes'~ \AutoBarline
-         a' fes''~  c''~  a' fes''4 c''8~  a'\AutoBarline
-         fes'' ces' aes' fes''~  fes'' ces' aes' fes''\AutoBarline
-         d'' c'' ces' a'~  c''4 a'8 fes'~ \AutoBarline
+         e'' c''' a'' e'' \tuplet 3/2 { a''~  b''~  a'' } aes'' ges''\AutoBarline
+         g'' ges'' \tuplet 3/2 { e''16~  f''~  e''~  } d''8 des'' b' c'' bes'~ \AutoBarline
+         a' e''~  c''~  a' e''4 c''8~  a'\AutoBarline
+         e'' b' aes' e''~  e'' b' aes' e''\AutoBarline
+         d'' c'' b' a'~  c''4 a'8 e'~ \AutoBarline
 %65
-         fes'8. d'16~  bes8 c'~  d' fes' \tuplet 3/2 { g'16~  bes'~  c'' } bes'8\AutoBarline
-         g'4 \tuplet 3/2 { a'8 f' a' } \tuplet 3/2 { r c'' fes' } \tuplet 3/2 { f' a' c'' }         \tuplet 3/2 { r fes'' d' } \tuplet 3/2 { g' aes' d'' } \tuplet 3/2 { d'' ees'' aes'' } \tuplet 3/2 { a''~  ees''' ces''~  }         d'''4. \tuplet 3/2 { d'''16~  d'''~  des'''~  } c'''8 ces'' a'' g''\AutoBarline
-         \tuplet 3/2 { a''16~  fes''~  a''~  } fes''8 \tuplet 3/2 { d''16~  fes''~  a''~  } fes''8 d''~  a'4. \AutoEndMovementBarline
+         e'8. d'16~  c'8 d'~  e' g' \tuplet 3/2 { bes'16~  c''~  bes' } g'8\AutoBarline
+         a'4 \tuplet 3/2 { f'8 a' c'' } \tuplet 3/2 { r e' f' } \tuplet 3/2 { a' c'' e'' } \tuplet 3/2 { r d' g' } \tuplet 3/2 { aes' d'' d'' } \tuplet 3/2 { ees'' aes'' a'' } \tuplet 3/2 { ees'''~  b'' d'''~  }         d'''4. \tuplet 3/2 { d'''16~  des'''~  c'''~  } b''8 a'' g'' a''\AutoBarline
+         \tuplet 3/2 { e''16~  a''~  e''~  } d''8 \tuplet 3/2 { e''16~  a''~  e''~  } d''8 a'~  e''4. \AutoEndMovementBarline
 
 }%fin ici
 %Default Score Layout
@@ -93,7 +93,7 @@ MvmntIVoiceI = {
         }
 
 \header {
-title = "autumn leaves for trumpet en sol majeur"
+title = "autumn leaves for trumpet in g major"
         }
 #(set-default-paper-size "a4")
 #(set-global-staff-size 18)

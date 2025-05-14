@@ -81,8 +81,8 @@ MvmntIVoiceI = {
          Manote Manote Manote Manote~  Manote Manote Manote Manote\AutoBarline
          Manote Manote Manote Manote~  Manote4 Manote8 Manote~ \AutoBarline
 %65
-         Manote8. Manote16~  bes8 Manote~  Manote Manote \tuplet 3/2 { Manote16~  Manote~  Manote } Manote8\AutoBarline
-         Manote4 \tuplet 3/2 { Manote8 Manote Manote } \tuplet 3/2 { r Manote Manote } \tuplet 3/2 { Manote Manote Manote }         \tuplet 3/2 { r Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote~  Manote Manote~  }         Manote4. \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 Manote Manote Manote\AutoBarline
+         Manote8. Manote16~  Manote8 Manote~  Manote Manote \tuplet 3/2 { Manote16~  Manote~  Manote } Manote8\AutoBarline
+         Manote4 \tuplet 3/2 { Manote8 Manote Manote } \tuplet 3/2 { r Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { r Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote Manote Manote } \tuplet 3/2 { Manote~  Manote Manote~  }         Manote4. \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 Manote Manote Manote\AutoBarline
          \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 \tuplet 3/2 { Manote16~  Manote~  Manote~  } Manote8 Manote~  Manote4. \AutoEndMovementBarline
 
 }%fin ici

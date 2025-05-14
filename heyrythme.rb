@@ -30,6 +30,7 @@ new_content = new_content.gsub(pattern) do |match|
     /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{2})\b/,
     /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{1})\b/,
     /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is))\b/,
+    /(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is))/,
     /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g])\b/
   ]
   patterns.each do |pattern1|

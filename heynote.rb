@@ -28,7 +28,7 @@ output = lines.map do |line|
   # Remove specific elements and numbers with points
   p "avant"+line
 
-  line=line.gsub(/[~]/, " ").strip
+  line=line.gsub(/~/, " ").strip
   line=line.gsub("?"," ").gsub(/\\AutoBarline|\\AutoEndMovementBarline|%?\d{1,2}|%?(\d|\d\.|[1-9][0-9]\.)/, " ").gsub(/\br\d+/, " ").gsub(/ r /, " ").strip
   line=line.gsub("\\partial", " ").strip
   line=line.gsub("*", " ").strip
@@ -43,6 +43,9 @@ p "salut ça va"
 
 # Join the processed lines
 result = output.join(" ")
+while result.include?("r") do
+  result=result.gsub("r"," ")
+end
 while result.include?("  ") do
   result=result.gsub("  "," ")
 end
