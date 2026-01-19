@@ -19,17 +19,20 @@ pattern = /MvmntIVoiceI\s*=\s*\{\s*([\s\S]*?)\s*\}\s*%Default Score Layout/
 new_content = new_content.gsub(pattern) do |match|
   inner_content = $1
   updated_inner_content = inner_content
+  updated_inner_content=updated_inner_content.gsub("##f","dontreplaceme")
+  
   patterns = [
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{4})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{3})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{2})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{1})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{4})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{3})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{2})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{1})\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is))\b/,
-    /\b(?<!AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g])\b/
+
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{4})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{3})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{2})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is)\\'{1})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{4})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{3})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{2})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{1})\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is))\b/,
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g])\b/
   ]
   patterns.each do |pattern1|
 
@@ -40,6 +43,7 @@ new_content = new_content.gsub(pattern) do |match|
     end
 
   end
+  updated_inner_content=updated_inner_content.gsub("dontreplaceme","##f")
   "MvmntIVoiceI = {\n#{updated_inner_content}\n}\n%Default Score Layout\n"
 end
 while new_content.include?("ManoteManote") do

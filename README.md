@@ -1,5 +1,11 @@
  
-#j'ai joue autumn leaves solo
+# j'ai joue autumn leaves solo
+![alt text](score1.png)
+- notes :
+![alt text](score2.png)
+- rythme :
+![alt text](score3.png)
+
 - autumn1 ly => notes de autumn leaves (lilypond)
 * autumn2 ly rythmne seulement de autumn leaves (lilypond)
 ```bash

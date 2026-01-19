@@ -21,7 +21,7 @@ def transpose_notes(notes, interval)
       "ges" => 6, "g" => 7, "gis" => 8, "aes" => 8, "a" => 9, "ais" => 10, "bes" => 10, "b" => 11, "bis" => 12, "ces" => 11,
       "c'" => 12, "cis'" => 13, "des'" => 13, "d'" => 14, "dis'" => 15, "ees'" => 15, "e'" => 16, "eis'" => 17, "fes'" => 16, "f'" => 17, "fis'" => 18,
       "ges'" => 18, "g'" => 19, "gis'" => 20, "aes'" => 20, "a'" => 21, "ais'" => 22, "bes'" => 22, "b'" => 23, "bis'" => 24, "ces'" => 23,
-      "c''" => 24, "cis''" => 25, "des''" => 25, "d''" => 26, "dis''" => 27, "ees''" => 27, "e''" => 28, "eis''" => 29, "fes''" => 28, "f''" => 29, "fis''" => 30,
+      "c''" => 24, "cis''" => 25, "des''" => 25, "d''" => 26, "dis''" => 27, "es''" => 27, "ees''" => 27, "e''" => 28, "eis''" => 29, "fes''" => 28, "f''" => 29, "fis''" => 30,
       "ges''" => 30, "g''" => 31, "gis''" => 32, "aes''" => 32, "a''" => 33, "ais''" => 34, "bes''" => 34, "b''" => 35, "bis''" => 36, "ces''" => 35,
       "c'''" => 36, "cis'''" => 37, "des'''" => 37, "d'''" => 38, "dis'''" => 39, "ees'''" => 39, "e'''" => 40, "eis'''" => 41, "fes'''" => 40, "f'''" => 41, "fis'''" => 42,
       "ges'''" => 42, "g'''" => 43, "gis'''" => 44, "aes'''" => 44, "a'''" => 45, "ais'''" => 46, "bes'''" => 46, "b'''" => 47, "bis'''" => 48, "ces'''" => 47,
@@ -41,6 +41,7 @@ def transpose_notes(notes, interval)
     p note
 
     midi_value = note_map[note]
+    p "midi value:"+midi_value.to_s
     transposed_value = (midi_value + interval) #% 60
     transposed_note = reverse_note_map[transposed_value]
 
@@ -75,12 +76,14 @@ new_content = content.gsub('Manote') do
   #note = all_transposed_notes[notes_counter % notes_array.length]
   note = all_transposed_notes[notes_counter]
   notes_counter += 1
-  p note
-  note
+  p "note:;"+(note or "a")
+  note or "a"
 end
+p new_content
 
 # Write the updated content back to the file
-File.open(la_partition, 'w') { |file| file.write(new_content) }
+#File.open(la_partition, 'w') { |file| file.write(new_content) }
+File.write(la_partition, new_content)
 
 puts "The content has been updated successfully!"
 
