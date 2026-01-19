@@ -14,8 +14,12 @@ AutoBarline = {}
 AutoEndMovementBarline = \bar "|."
 
 % The music follows
-
+global = {
+ 
+}
 MvmntIVoiceI = {
+  \time 4/4
+\key g \minor
 \once \override Staff.TimeSignature #'stencil = ##f \time 4/4  \set Score.skipBars = ##t R1*4/4*4         %{ grouped rest %}         %{ grouped rest %}         %{ grouped rest %}%5
          \set Score.skipBars = ##t R1*4/4*3         %{ grouped rest %}         %{ grouped rest %}         r2 r4 r16 f' bes'8~ \AutoBarline
           \repeat volta 2 {
@@ -118,7 +122,7 @@ tagline = \markup {"/home/ordigoud/thechickenscore.denemo" on \simple #(strftime
 %Start of Staff
 \new Staff = "Part 1"  << 
  \new Voice = "MvmntIVoiceI"  { 
-  \clef treble    \key c \major    \time 4/4   \MvmntIVoiceI
+  \clef treble    \key g \minor    \time 4/4   \MvmntIVoiceI
                         } %End of voice
 
                         >> %End of Staff
@@ -133,20 +137,20 @@ tagline = \markup {"/home/ordigoud/thechickenscore.denemo" on \simple #(strftime
 %Start of Staff
 \new Staff = "Part 1"  << 
  \new Voice = "MvmntIIVoiceI"  { 
-  \clef treble    \key c \major    \time 4/4   \MvmntIIVoiceI
+  \clef treble    \key g \minor    \time 4/4   \MvmntIIVoiceI
                         } %End of voice
 
                         >> %End of Staff
 
           >>
 
-\header {
-title = ##f
-instrument = ##f
-
-        }
 
        } %End of Movement
 
 
 
+\header {
+title = ##f
+instrument = ##f
+
+        }
