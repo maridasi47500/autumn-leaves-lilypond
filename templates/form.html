@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Formulaire Partition</title></head>
+<body>
+<h1>{{ 'Modifier' if score else 'Ajouter' }} une partition</h1>
+<form method="post" action="{{ url_for('save') }}">
+  {% if score %}<input type="hidden" name="id" value="{{ score[0] }}">{% endif %}
+  <label>Thème (nom de la partition court (avec seulement des lettres)): <input name="theme" value="{{ score[1] if score else '' }}"></label><br>
+  <label>Nom (titre de la partition): <input name="nom" value="{{ score[2] if score else '' }}"></label><br>
+  <label>demi ton de la partition: <input name="semitones" value="{{ score[3] if score else '' }}"></label><br>
+  <label>key signature (c major, d minor) <input name="keys" value="{{ score[4] if score else '' }}"></label><br>
+  <label>notes en langage lilypond absolu : <textarea name="notes">{{ score[5] if score else '' }}"</textarea><br>
+  <label>mesure (3/4, 4/4) dans le petit text: <input name="times" value="{{ score[6] if score else '' }}"></label><br>
+  <label>rythme en langage lilypond<textarea name="rythmes">{{ score[8] if score else '' }}</textarea><br>
+  <button type="submit">💾 Sauvegarder</button>
+</form>
+<a href="/">retour</a>
+
+
+</body>
+</html>
+

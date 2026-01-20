@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Choix de la partition</title>
+</head>
+<body>
+    <h1>🎯 Retrouve ta partition de musique</h1>
+    <form method="post">
+<div class="field">
+        <label for="theme">Choisis ton thème :</label>
+        <select name="theme" id="theme">
+            {% for key, val in menu.items() %}
+                <option value="{{ key }}">{{ val.nom }}</option>
+            {% endfor %}
+        </select>
+</div>
+<div class="actions">
+        <button type="submit">Lancer</button>
+</div>
+    </form>
+
+
+<h1>📋 Partitions enregistrées</h1>
+<a href="{{ url_for('new') }}">➕ Créer une partition </a>
+<ul>
+  {% for s in scores %}
+    <li>
+      <strong>{{ scores[s]['nom'] }}</strong> — {{ scores[s]['mesures'] }} mesures
+      <a href="{{ url_for('edit', score_id=scores[s]['id']) }}">✏️ Modifier</a>
+    </li>
+  {% endfor %}
+</ul>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+
+<iframe style="width:100%;height:200px;" src="http://localhost:8000/scores/current{{ namescore }}_1/{{namescore}}_1.html"></iframe>
+<iframe style="width:100%;height:200px;" src="http://localhost:8000/scores/current{{ namescore }}_2/{{namescore}}_2.html"></iframe>
+<iframe style="width:100%;height:200px;" src="http://localhost:8000/scores/current{{ namescore }}fini/{{namescore}}fini.html"></iframe>
+    {% endif %}
+
+</body>
+</html>
+

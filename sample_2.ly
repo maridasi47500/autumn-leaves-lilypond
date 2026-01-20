@@ -16,10 +16,9 @@ AutoEndMovementBarline = \bar "|."
 % The music follows
 
 MvmntIVoiceI = {
-Manote4 Manote4. Manote8 Manote4 Manote4. Manote8 Manote16 Manote Manote Manote
+MONRYTHMEICI
 }
 %Default Score Layout
-
 
 \header{DenemoLayoutName = "Default Score Layout"
         instrumentation = \markup { \with-url #'"scheme:(d-BookInstrumentation)" "Partition entière"}
@@ -39,7 +38,7 @@ tagline = \markup {"/home/ordigoud/thechickenscore.denemo" on \simple #(strftime
 
 %Start of Staff
 \new Staff = "MvmntIVoice" { 
-  \clef treble    \key a \major    \time 3/4   \MvmntIVoiceI
+  \clef treble    \key KEYSIGNATUREHERE    \time TIMESIGNATUREHERE   \MvmntIVoiceI
                         }
 
        } %End of Movement

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Détails de l'effet</title></head>
+<body>
+  <h1>✨ Effet : {{ effet[1] }}</h1>
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+
+  <ul>
+    {% for etape in etapes %}
+      <li><strong>{{ etape[0] }}</strong> → {{ etape[1] }}
+{% if etape[0] == "color" %}
+    {% set rgb_dict = etape[1] %}
+    {% set rgb_string = rgb_dict.r|string + " " + rgb_dict.g|string + " " + rgb_dict.b|string %}
+    <div style="height: 50px; width: 100px; background: rgb({{ rgb_string }});">
+    </div>
+{% endif %}
+
+</li>
+    {% endfor %}
+  </ul>
+
+  <form method="post" action="{{ url_for('rejouer_effet', id=effet[0]) }}">
+    <button type="submit">🔁 Rejouer cet effet</button>
+  </form>
+<a href="/effets">retour</a>
+
+</body>
+</html>
+

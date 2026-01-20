@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title>Liste des effets lumineux</title></head>
+<body>
+  <h1>📋 Effets lumineux enregistrés</h1>
+  <ul>
+    {% for effet in effets %}
+      <li>ID {{ effet[0] }} : {{ effet[1] }}<a href="/effet/{{ effet[0] }}">voir effet</a></li>
+    {% else %}
+      <li>Aucun effet enregistré.</li>
+    {% endfor %}
+  </ul>
+    <form method="post">
+<div class="field">
+        <label for="theme">Choisis ton effet :</label>
+        <select name="effet" id="effet">
+            {% for effet in effets %}
+                <option value="{{ effet[0] }}">{{ effet[1] }}</option>
+            {% endfor %}
+        </select>
+</div>
+<div class="actions">
+        <button type="submit">Lancer</button>
+</div>
+    </form>
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+<a href="/">retour</a>
+
+
+
+</body>
+</html>
+

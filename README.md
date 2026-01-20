@@ -36,6 +36,12 @@ sh ./partition.sh autumn-leaves-violin.ly 2
 
 
 
+````
+python3 app.py
+python3 -m http.server
+mkdir scores
+````
+
 
 
 
