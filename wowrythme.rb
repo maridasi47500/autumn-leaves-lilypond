@@ -34,7 +34,7 @@ new_content = new_content.gsub(pattern) do |match|
     /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{2})\b/,
     /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g]\\'{1})\b/,
     /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g](es|is).)\b/,
-    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g])\b?/
+    /\b(?<!set|dontreplaceme|Score|skipBars|repeat|volta|stencil|once|override|Staff|TimeSignature|time|score|alternative|grouped|rest|AutoBarline|tuplet|partial|AutoEndMovementBarline)([a-g])\b/
   ]
   patterns.each do |pattern1|
 
